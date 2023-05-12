@@ -19,49 +19,52 @@
 
 
 
-            <!-- cal are  -->
+            <!-- cal input are  -->
             <div class="calculation-area  bg-gray-100 col-span-2 ">
                 <div class="w-5/6 mx-auto">
                     <h1 class="text-center text-2xl mb-5">Income</h1>
 
                     <div class="flex  mx-auto w-4/6">
                         <p class="w-1/4 text-center py-2 text-end">Income: </p>
-                        <input class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
+                        <input id="income-field" class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
                     </div>
                     <h1 class="text-center text-2xl mb-5">Expenses</h1>
                     <div class="flex  mx-auto w-4/6">
                         <p class="w-1/4 text-center py-2 text-end">Food: </p>
-                        <input class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
+                        <input id="food-field" class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
                     </div>
                     <div class="flex  mx-auto w-4/6">
                         <p class="w-1/4 text-center py-2 text-end">Rent: </p>
-                        <input class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
+                        <input id="rent-field" class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
                     </div>
                     <div class="flex  mx-auto w-4/6">
                         <p class="w-1/4 text-center py-2 text-end">Clothes: </p>
-                        <input class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
+                        <input id="cloth-field" class="w-3/4 px-10 py-2 mb-5 ms-3" type="text">
                     </div>
-
                 </div>
+                <!-- calculate  -->
                 <div class="calculate text-center mb-10">
                     <button id="calculate-btn" class="bg-blue-500 py-3 px-10 rounded text-white text-center
                     flex mx-auto mb-5">Calculate</button>
-                    <h1 class="mb-5">Total Expenses: <span>1220</span></h1>
-                    <h1>Blance: <span>1220</span></h1>
+                    <h1 class="mb-5 text-xl">Total Expenses: <span id="expensField">1220</span></h1>
+                    <h1 class="text-xl">Blance: <span id="blance-field">1220</span></h1>
                 </div>
 
-
-                <div class="flex  mx-auto w-4/6">
+                <!-- save money  -->
+                <div class="flex  mx-auto w-4/6 mb-5">
                     <p class="w-1/4 text-center py-2 text-end">Save: </p>
                     <input class="w-1/4 px-10 py-2 rounded mb-5 ms-3" type="text">
                     <p class="px-5">%</p>
                     <button class="bg-blue-500 mb-5 py-2 px-12 rounded">Save</button>
                 </div>
-
+                <p class="text-center mb-3 text-xl">Saving Amount: <span>100</span></p>
+                <p class="text-center text-xl">Remaining Blance: <span>4150</span></p>
             </div>
         </div>
     </div>
 
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
